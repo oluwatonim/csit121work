@@ -1,0 +1,18 @@
+body{
+    background-color: pink;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   h1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+   }
+#para1 {
+text-align: start;
+color: red;
+}
+.center {
+text-align: center;
+color: red;
+}
