@@ -1,0 +1,34 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+    font-size: medium;
+}
+
+header{
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+}
+
+nav a {
+    color: deeppink;
+    margin: 0 15px;
+    text-decoration: dotted;
+}
+
+main{
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+footer{
+    background-color: lightpink;
+    color: red;
+    text-align: center ;
+}
