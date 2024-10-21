@@ -1,0 +1,44 @@
+body{
+    background-color: pink;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   h1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+   }
+#para1 {
+text-align: start;
+color: red;
+}
+.center {
+text-align: center;
+color: red;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .blog-container {
+        display: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .blog-post {
+        flex: 50px; /* Adjust each post width */
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}

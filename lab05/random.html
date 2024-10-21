@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .blog-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Media Query for Larger Screens */
+        @media (min-width: 768px) {
+            .blog-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            body {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#post1">Blog Post 1</a></li>
+            <li><a href="#post2">Blog Post 2</a></li>
+            <li><a href="#post3">Blog Post 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Posts -->
+    <section class="blog-container">
+        <article id="post1">
+            <h2>Blog Post 1</h2>
+            <p>This is the content for blog post 1.</p>
+        </article>
+
+        <article id="post2">
+            <h2>Blog Post 2</h2>
+            <p>This is the content for blog post 2.</p>
+        </article>
+
+        <article id="post3">
+            <h2>Blog Post 3</h2>
+            <p>This is the content for blog post 3.</p>
+        </article>
+    </section>
+
+    <!-- Reflection Paragraph -->
+    <footer>
+        <p>Responsive web design ensures that websites are accessible and functional across various devices. Using techniques like flexbox, grid, and media queries, designers can create layouts that adapt to different screen sizes, enhancing the user experience. Key practices include ensuring readability, intuitive navigation, and optimizing loading times for mobile users.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="Width=device-width, initial-scale=1.0" />
+    <title>Learning Web Standards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+     body{
+      background-color: pink;
+      font-size: medium;
+      font-family: 'Times New Roman', Times, serif;
+     }
+     h1{
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: medium;
+     }
+#para1 {
+  text-align: start;
+  color: red;
+}
+.center {
+  text-align: center;
+  color: red;
+}
+/* media Query */ 
+.blog-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .blog-container {
+        display: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .blog-post {
+        flex: 50px; /* Adjust each post width */
+    }
+}
+
+#blog2{
+  float: inline-end;
+}
+</style> 
+<header>
+    <nav>
+       <ul>
+          <a href="index.html">Blog Post 1</a>
+           <a href="index.copy.html">Blog Post 2</a>
+           <a href="Blog.html">Blog Post 3</a>
+        </ul>
+    </nav>
+</header>
+
+<section class="blog-container">
+<article id="Index.html">
+    <h2>Blog Post 1</h2>
+    <p>Content for how to create a webpage</p>
+</article>
+
+<article id="index.copy.html">
+  <h2>Blog Post 2</h2>
+  <p>This is content for how to add background color and font to webpage.</p>
+</article>
+
+<article id="Blog.html">
+  <h2>Blog post 2</h2>
+  <p>This is content for how to navigate all 3 blog pagee.</p>
+</article>
+</section>
+
+<body>
+
+<h4>Best Design Practice Lesson learnt</h4>
+    <p> In this Lab 5, I learnt how to use grid and flexbox. I understand a little more on how to link and navigate from one html to another. I enjoyed using my imagination to create this lab assignment. It was a little fun to create.</p>
+  
+<footer>&copy 2024 Oluwatoni Martins. All rights reserved.</footer>
