@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="tierlist.html">Tier List</a>
+        <a href="contact.html">Contact Form</a>
+    </nav>
+
+    <h1>Contact Us about our Favorite food Tier List</h1>
+
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <label>Favorite Food</label>
+        <select name="favorite-food" id="favorite-food">
+            <option value="nuggets">Nuggets</option>
+            <option value="Jollof rice">Jollof Rice</option>
+            <option value="riceandpeas">Rice and Peas</option>
+            <option value="burger">Burger</option>
+            <option value="Chickenandfries">Chicken and Fries</option>
+            <option value="Jerkchicken">Jerk Chicken</option>
+        </select>
+
+        <label>Do you prefer American food or Other cultures food?</label>
+        <input type="radio" id="americanfood" name="preference" value="americanfood">
+        <label for="americanfood">American food</label>
+        <input type="radio" id="otherculturesfood" name="preference" value="otherculturesfood">
+        <label for="otherculturesfood">Other Cultures Food</label>
+
+        <label>Receive updates:</label>
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">Yes, Send me updates!</label>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
