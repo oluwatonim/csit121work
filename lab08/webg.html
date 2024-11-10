@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEPG Image Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: 'Lato', sans-serif;
+      }
+      
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+    
+      header{
+        background-color: burlywood;
+        color: black;
+        text-align: center;
+    }
+      </style>
+      <body>
+      
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="jpg.html">JPG</a>
+          <a href="png.html">PNG</a>
+          <a href="webg.html">WEBG</a>
+        </div>
+      </div>
+      
+      <h1>Example of different images</h1>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+  <body>
+    <main>
+        <section>
+            <h2>Image: WEBG Image Example</h2>
+            <img src="images/instagramlogo.webp" alt="Example of WEBG Image" >
+            <p>This is an Example of WEBG Image. WEBG's can make a web faster and create smaller and richer Images. I used and Instagram Logo for this example because everyone knows/ uses Instagram by now. Instagram is a social media app that makes it easy to express yourself and showcase your talents. I Love using instagram to post pictures of myself and Make new friendss. I totally recommend using instagram to connect with other people and it can also be used to make money.</p>
+        </section>
+
+    <a href="https://www.nytimes.com/2016/05/12/technology/the-great-instagram-logo-freakout-of-2016.html"> Visit for more</a>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Image</p>
+    </footer>
+</body>
+</html>
