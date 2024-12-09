@@ -1,0 +1,134 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+    font-size: medium;
+}
+
+.overlay {
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(#255, green, blue);
+    background-color: rgba(#225, green, blue, alpha);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a { 
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px;}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+header{
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+}
+
+nav a {
+    color: deeppink;
+    margin: 0 15px;
+    text-decoration: dotted;
+    text-align: center;
+}
+
+main{
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+footer{
+    background-color: lightpink;
+    color: red;
+    text-align: center ;
+}
+
+body {
+    background-image: url('image/360_F_497861573_EX9cjKXjVLBhbHrawjVK8M3BthLDS5lE.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: plum;
+}
+
+img {
+    border-radius: 5px;
+}
+
+aside {
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Media Query for Larger Screens */
+        @media (min-width: 768px) {
+            .blog-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
